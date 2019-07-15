@@ -1,0 +1,29 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage",
+        "corejs": 2,
+        "targets": "> 0.25%, not dead",
+        "modules": "cjs",
+        "include": ["es6.number.*"]
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "ssr": true
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "alias": {}
+      }
+    ]
+  ]
+}
